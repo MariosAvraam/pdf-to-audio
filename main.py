@@ -20,11 +20,16 @@ def extract_text_from_pdf(pdf_path):
     # Create a PDF reader object for the given PDF path.
     reader = PdfReader(pdf_path)
 
-    # Get the first page of the PDF.
-    page = reader.pages[0]
+    # Initialize an empty string to store the text from all pages.
+    text = ""
+
+    # Iterate over each page in the PDF.
+    for page in reader.pages:
+        # Extract text from the current page and append it to the text variable.
+        text += page.extract_text()
 
     # Extract and return text from the first page.
-    return page.extract_text()
+    return text
 
 def convert_text_to_speech(text):
     """
