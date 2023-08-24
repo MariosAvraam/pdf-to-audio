@@ -33,7 +33,7 @@ pip install -r requirements.txt
 ```
 
 ### 5. Set Up Your .env File
-Create a .env file in the root directory of the project. Add the path to your Google Cloud service account key:
+Create a `.env` file in the root directory of the project. Add the path to your Google Cloud service account key:
 
 ```bash
 GOOGLE_APPLICATION_CREDENTIALS=/path/to/your/service/account/key.json
