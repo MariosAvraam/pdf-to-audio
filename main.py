@@ -81,7 +81,7 @@ def main():
     Main function to extract text from a PDF, convert it to speech, and save it as an MP3 file.
     """
     # Extract text from the specified PDF.
-    text = extract_text_from_pdf("text.pdf")
+    text = extract_text_from_pdf(input("Enter the name of the pdf file you want to convert to audio (filename.pdf): "))
 
     # Convert the extracted text to speech.
     audio_data = convert_text_to_speech(text)
