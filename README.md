@@ -41,8 +41,16 @@ GOOGLE_APPLICATION_CREDENTIALS=/path/to/your/service/account/key.json
 
 ## Usage
 
-1. Follow the prompts and wait for the script to generate the output.mp3 file.
-2. Listen to the generated audio file!
+1. Place the PDF file you wish to convert into the root directory of the project.
+
+2. Run the script:
+```bash
+python main.py
+```
+
+3. Follow the prompts and wait for the script to generate the output.mp3 file.
+
+4. Listen to the generated audio file!
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
